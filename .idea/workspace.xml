@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a55a6640-ca25-4742-aee4-cf54144c971c" name="Default Changelist" comment="" />
+    <list default="true" id="a55a6640-ca25-4742-aee4-cf54144c971c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Code/DinicsAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Code/DinicsAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Code/EdmondsKarpAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Code/EdmondsKarpAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Code/FordFulkersonAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Code/FordFulkersonAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Code/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Code/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Code/NetworkFlowSolverBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Code/solveNetworkFlow.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,13 +22,18 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1ZTmJ6xLUhIyYreJ8QJusjvchh0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
@@ -59,6 +72,8 @@
       <option name="presentableId" value="Default" />
       <updated>1584871386663</updated>
       <workItem from="1584871400652" duration="14232000" />
+      <workItem from="1584947541000" duration="1818000" />
+      <workItem from="1585071697730" duration="2754000" />
     </task>
     <servers />
   </component>
@@ -70,26 +85,30 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="530" y="81" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1584884199841" />
-    <state width="685" height="708" key="GridCell.Tab.0.bottom" timestamp="1584891294176">
+    <state x="297" y="0" key="CommitChangelistDialog2" timestamp="1584953960231">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="685" height="708" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1584891294176" />
-    <state width="685" height="708" key="GridCell.Tab.0.center" timestamp="1584891294175">
+    <state x="297" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1584953960231" />
+    <state width="561" height="708" key="GridCell.Tab.0.bottom" timestamp="1585077425964">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="685" height="708" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1584891294175" />
-    <state width="685" height="708" key="GridCell.Tab.0.left" timestamp="1584891294174">
+    <state width="561" height="708" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1585077425964" />
+    <state width="561" height="708" key="GridCell.Tab.0.center" timestamp="1585077425964">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="685" height="708" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1584891294174" />
-    <state width="685" height="708" key="GridCell.Tab.0.right" timestamp="1584891294175">
+    <state width="561" height="708" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1585077425964" />
+    <state width="561" height="708" key="GridCell.Tab.0.left" timestamp="1585077425964">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="685" height="708" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1584891294175" />
-    <state x="401" y="215" key="com.intellij.ide.util.TipDialog" timestamp="1584947617991">
+    <state width="561" height="708" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1585077425964" />
+    <state width="561" height="708" key="GridCell.Tab.0.right" timestamp="1585077425964">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="401" y="215" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1584947617991" />
+    <state width="561" height="708" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1585077425964" />
+    <state x="401" y="215" key="com.intellij.ide.util.TipDialog" timestamp="1585072167619">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="401" y="215" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1585072167619" />
     <state x="436" y="147" key="extract.method.dialog" timestamp="1584875731984">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

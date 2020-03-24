@@ -10,14 +10,34 @@ public class Main {
 
         //get the number of nodes
         int nodes = sc.nextInt();
-        int source = nodes - 2;
-        int sink = nodes - 1;
+        System.out.println("What is the source node (enter the number of the source) : ");
+        //int source = nodes - 2;
+        int source = sc.nextInt();
+        System.out.println("Enter the sink node: ");
+        //int sink = nodes - 1;
+        int sink = sc.nextInt();
 
-        NetworkFlowSolverBase fordFulkersonDfsSolver = new FordFulkersonAlgorithm(nodes, source, sink);
-        NetworkFlowSolverBase edmondsKarpSolver = new EdmondsKarpAlgorithm(nodes, source, sink);
-        NetworkFlowSolverBase dinicsSolver = new DinicsAlgorithm(nodes, source, sink);
+        //import each algorithm
+        solveNetworkFlow fordFulkersonDfsSolver = new FordFulkersonAlgorithm(nodes, source, sink);
+        solveNetworkFlow edmondsKarpSolver = new EdmondsKarpAlgorithm(nodes, source, sink);
+        solveNetworkFlow dinicsSolver = new DinicsAlgorithm(nodes, source, sink);
 
-        System.out.print("The nodes present between the source and sink: ");
+        //num of nodes between the source and sink
+        System.out.println("Nodes between source and sink");
+        for(int i = 0; i < nodes; i++){
+            if(i != source && i != sink){
+                System.out.println(i);
+            }else{
+                continue;
+            }
+        }
+
+        //getting connections between source node and other nodes
+
+
+
+        //print the number of nodes in between the source and sink
+        /*System.out.print("The nodes present between the source and sink: ");
         for(int i = 0; i < source; i++){
             System.out.print(i);
             if(i == source - 1){
@@ -26,8 +46,10 @@ public class Main {
             }else{
                 System.out.print(", ");
             }
-        }
+        }*/
 
+        //get the connections that start from the source nodes and end at other nodes
+        System.out.println("Now, at the starting part of the graph (i.e. the source nodes)");
         System.out.println("Is there a connection between the source node and any other nodes");
         System.out.println("Answer \"y\" if yes or \"n\" for no");
         String answer = sc.next();
@@ -44,24 +66,30 @@ public class Main {
             answer = sc.next();
         }
 
-
-        for(int i = 0; i < source; i++){
-            System.out.println("Is there a connection between the node " + i + " and any other nodes");
-            System.out.println("Answer \"y\" if yes or \"n\" for no");
-            String answer_2 = sc.next();
-            while(answer_2.toLowerCase().contains("y")){
-                System.out.println("Enter the node where the node " + i + " is connected to...");
-                int end = sc.nextInt();
-                System.out.println("What is the weight between the node " + i + " and node " + end + " :");
-                Long weight = getWeightFromUser();
-                fordFulkersonDfsSolver.connectEdge(i, end, weight);
-                edmondsKarpSolver.connectEdge(i, end, weight);
-                dinicsSolver.connectEdge(i, end, weight);
+        //get the connections that start from the middle node and goes to other nodes (except the sink node)
+        for(int i = 0; i < nodes; i++){
+            if(i != source && i != sink) {
+                System.out.println("Now, the the middle part of the graph");
                 System.out.println("Is there a connection between the node " + i + " and any other nodes");
                 System.out.println("Answer \"y\" if yes or \"n\" for no");
-                answer_2 = sc.next();
+                String answer_2 = sc.next();
+                while (answer_2.toLowerCase().contains("y")) {
+                    System.out.println("Enter the node where the node " + i + " is connected to...");
+                    int end = sc.nextInt();
+                    System.out.println("What is the weight between the node " + i + " and node " + end + " :");
+                    Long weight = getWeightFromUser();
+                    fordFulkersonDfsSolver.connectEdge(i, end, weight);
+                    edmondsKarpSolver.connectEdge(i, end, weight);
+                    dinicsSolver.connectEdge(i, end, weight);
+                    System.out.println("Is there a connection between the node " + i + " and any other nodes");
+                    System.out.println("Answer \"y\" if yes or \"n\" for no");
+                    answer_2 = sc.next();
+                }
+            }else{
+                continue;
             }
         }
+
 
         System.out.println("Is there a connection between other nodes and the sink nodes");
         System.out.println("Answer \"y\" if yes or \"n\" for no");

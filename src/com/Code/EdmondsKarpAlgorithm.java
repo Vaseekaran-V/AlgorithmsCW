@@ -5,7 +5,7 @@ import java.util.Queue;
 
 import static java.lang.Math.min;
 
-public class EdmondsKarpAlgorithm extends NetworkFlowSolverBase {
+public class EdmondsKarpAlgorithm extends solveNetworkFlow {
 
     public EdmondsKarpAlgorithm(int nodes, int source, int sink) {
         super(nodes, source, sink);

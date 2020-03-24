@@ -3,9 +3,9 @@ package com.Code;
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class  NetworkFlowSolverBase {
+public abstract class solveNetworkFlow {
     //to avoid overflow
-    public static final long INF = Long.MAX_VALUE / 2;
+    public static final long CONSTANTNUM = Long.MAX_VALUE / 2;
 
     //inputs :number of nodes, source and sink
     public final int nodes, source, sink;
@@ -19,7 +19,7 @@ public abstract class  NetworkFlowSolverBase {
 
     protected List<Edge>[] graph;
 
-    public NetworkFlowSolverBase(int nodes, int source, int sink) {
+    public solveNetworkFlow(int nodes, int source, int sink) {
         this.nodes = nodes;
         this.source = source;
         this.sink = sink;
@@ -76,7 +76,7 @@ public abstract class  NetworkFlowSolverBase {
         solve();
     }
 
+    //method that solves the network flow
     protected abstract void solve();
-
 
 }

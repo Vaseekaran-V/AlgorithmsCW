@@ -4,7 +4,7 @@ import java.util.List;
 
 import static java.lang.Math.min;
 
-public class FordFulkersonAlgorithm extends NetworkFlowSolverBase {
+public class FordFulkersonAlgorithm extends solveNetworkFlow {
 
     public FordFulkersonAlgorithm(int nodes, int source, int sink) {
         super(nodes, source, sink);
@@ -12,7 +12,7 @@ public class FordFulkersonAlgorithm extends NetworkFlowSolverBase {
 
     @Override
     protected void solve() {
-        for(long f = dfs(source, INF); f != 0; f = dfs(source, INF)) {
+        for(long f = dfs(source, CONSTANTNUM); f != 0; f = dfs(source, CONSTANTNUM)) {
             visitedToken++;
             maxFlow += f;
         }
