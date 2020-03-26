@@ -20,7 +20,7 @@ public class DinicsAlgorithm extends solveNetworkFlow {
         while(bfs()){
             Arrays.fill(next, 0);
 
-            for(long f = dfs(source, next, CONSTANTNUM); f != 0; f = dfs(source, next, CONSTANTNUM)){
+            for(long f = dfs(source, next, CONSTANT_NUM); f != 0; f = dfs(source, next, CONSTANT_NUM)){
                 maxFlow += f;
             }
         }

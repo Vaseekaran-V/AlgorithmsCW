@@ -12,7 +12,7 @@ public class FordFulkersonAlgorithm extends solveNetworkFlow {
 
     @Override
     protected void solve() {
-        for(long f = dfs(source, CONSTANTNUM); f != 0; f = dfs(source, CONSTANTNUM)) {
+        for(long f = dfs(source, CONSTANT_NUM); f != 0; f = dfs(source, CONSTANT_NUM)) {
             visitedToken++;
             maxFlow += f;
         }
@@ -26,8 +26,8 @@ public class FordFulkersonAlgorithm extends solveNetworkFlow {
 
         List<Edge> edges = graph[node];
         for (Edge edge : edges){
-            if(edge.remainingCapacity() > 0 && visited[edge.getEnd()] != visitedToken){
-                long bottleNeck = dfs(edge.getEnd(), min(flow, edge.remainingCapacity()));
+            if(edge.remainingCapacity() > 0 && visited[edge.end] != visitedToken){
+                long bottleNeck = dfs(edge.end, min(flow, edge.remainingCapacity()));
 
                 if(bottleNeck > 0){
                     edge.augment(bottleNeck);

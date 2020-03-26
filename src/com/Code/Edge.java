@@ -5,7 +5,7 @@ public class Edge {
     public int end;
     public Edge residual;
     public long flow;
-    public final long capacity;
+    public long capacity;
 
     public Edge(int start, int end, long capacity) {
         this.start = start;
@@ -37,6 +37,9 @@ public class Edge {
         this.end = end;
     }
 
+    public void setCapacity(long capacity) {
+        this.capacity = capacity;
+    }
 
     public long getFlow() {
         return flow;

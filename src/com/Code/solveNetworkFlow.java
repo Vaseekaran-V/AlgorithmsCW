@@ -5,7 +5,7 @@ import java.util.List;
 
 public abstract class solveNetworkFlow {
     //to avoid overflow
-    public static final long CONSTANTNUM = Long.MAX_VALUE / 2;
+    public static final long CONSTANT_NUM = Long.MAX_VALUE / 2;
 
     //inputs :number of nodes, source and sink
     public final int nodes, source, sink;
@@ -30,7 +30,7 @@ public abstract class solveNetworkFlow {
     private void initializeEmptyFlowGraph() {
         graph = new List[nodes];
         for (int i = 0; i < nodes; i++){
-            graph[i] = new ArrayList<Edge>();
+            graph[i] = new ArrayList<>();
         }
     }
 
@@ -44,6 +44,20 @@ public abstract class solveNetworkFlow {
         e2.setResidual(e1);
         graph[start].add(e1);
         graph[end].add(e2);
+    }
+
+    public void deleteEdge(int start, int end, Long capacity){
+        //Edge e = new Edge(start, end, capacity);
+        for(int i = 0; i < graph.length; i++){
+            for(int j = 0; j < graph[i].size(); j++){
+                if((graph[i].get(j).start == start && graph[i].get(j).end == end && graph[i].get(j).capacity == capacity)){
+                    graph[i].get(j).setCapacity(0);
+                }
+            }
+        }
+        initializeEmptyFlowGraph();
+        visited = new int[nodes];
+
     }
 
     public List<Edge>[] getGraph(){

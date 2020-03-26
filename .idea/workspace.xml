@@ -2,13 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a55a6640-ca25-4742-aee4-cf54144c971c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Vaseekaran.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MaxFlow/com/Code/DinicsAlgorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MaxFlow/com/Code/DinicsAlgorithm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MaxFlow/com/Code/EdmondsKarpAlgorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MaxFlow/com/Code/EdmondsKarpAlgorithm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MaxFlow/com/Code/FordFulkersonAlgorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MaxFlow/com/Code/FordFulkersonAlgorithm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MaxFlow/com/Code/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MaxFlow/com/Code/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MaxFlow/com/Code/NetworkFlowSolverBase.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/Code/DinicsAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Code/DinicsAlgorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/Code/EdmondsKarpAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Code/EdmondsKarpAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Code/Edge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Code/Edge.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/Code/FordFulkersonAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Code/FordFulkersonAlgorithm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/Code/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Code/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/Code/NetworkFlowSolverBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Code/solveNetworkFlow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Code/solveNetworkFlow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Code/solveNetworkFlow.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +28,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1ZTmJ6xLUhIyYreJ8QJusjvchh0" />
@@ -73,42 +83,74 @@
       <updated>1584871386663</updated>
       <workItem from="1584871400652" duration="14232000" />
       <workItem from="1584947541000" duration="1818000" />
-      <workItem from="1585071697730" duration="2754000" />
+      <workItem from="1585071697730" duration="4048000" />
+      <workItem from="1585120731185" duration="4916000" />
+      <workItem from="1585195952831" duration="9968000" />
     </task>
+    <task id="LOCAL-00001" summary="Modified the code: can specify which nodes are the source and sink, therefore it would be easier for the user">
+      <created>1585077647133</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1585077647133</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Modified the code: can specify which nodes are the source and sink, therefore it would be easier for the user" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modified the code: can specify which nodes are the source and sink, therefore it would be easier for the user" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="530" y="81" key="#com.intellij.ide.util.MemberChooser" timestamp="1584884199841">
+    <state x="261" y="8" key="#Notifications" timestamp="1585244450257">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="530" y="81" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1584884199841" />
-    <state x="297" y="0" key="CommitChangelistDialog2" timestamp="1584953960231">
+    <state x="261" y="8" key="#Notifications/0.0.1536.864@0.0.1536.864" timestamp="1585244450257" />
+    <state x="530" y="81" key="#com.intellij.ide.util.MemberChooser" timestamp="1585243902820">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="297" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1584953960231" />
-    <state width="561" height="708" key="GridCell.Tab.0.bottom" timestamp="1585077425964">
+    <state x="530" y="81" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1585243902820" />
+    <state x="142" y="0" key="CommitChangelistDialog2" timestamp="1585245386810">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="561" height="708" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1585077425964" />
-    <state width="561" height="708" key="GridCell.Tab.0.center" timestamp="1585077425964">
+    <state x="142" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1585245386810" />
+    <state width="672" height="708" key="GridCell.Tab.0.bottom" timestamp="1585244313398">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="561" height="708" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1585077425964" />
-    <state width="561" height="708" key="GridCell.Tab.0.left" timestamp="1585077425964">
+    <state width="672" height="708" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1585244313398" />
+    <state width="672" height="708" key="GridCell.Tab.0.center" timestamp="1585244313398">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="561" height="708" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1585077425964" />
-    <state width="561" height="708" key="GridCell.Tab.0.right" timestamp="1585077425964">
+    <state width="672" height="708" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1585244313398" />
+    <state width="672" height="708" key="GridCell.Tab.0.left" timestamp="1585244313398">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="561" height="708" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1585077425964" />
-    <state x="401" y="215" key="com.intellij.ide.util.TipDialog" timestamp="1585072167619">
+    <state width="672" height="708" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1585244313398" />
+    <state width="672" height="708" key="GridCell.Tab.0.right" timestamp="1585244313398">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="401" y="215" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1585072167619" />
+    <state width="672" height="708" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1585244313398" />
+    <state x="261" y="100" key="Vcs.Push.Dialog.v2" timestamp="1585077651078">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="261" y="100" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1585077651078" />
+    <state x="401" y="215" key="com.intellij.ide.util.TipDialog" timestamp="1585195952893">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="401" y="215" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1585195952893" />
     <state x="436" y="147" key="extract.method.dialog" timestamp="1584875731984">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
