@@ -66,4 +66,16 @@ public class Edge {
         residual.flow -= bottleneck;
     }
 
+    public String toString(int source, int sink) {
+        String u = (start == source) ? "source" : ((start == sink) ? "sink" : String.valueOf(start));
+        String v = (end == source) ? "source" : ((end == sink) ? "sink" : String.valueOf(end));
+        if(flow > 0 && capacity > 0) {
+            return String.format(
+                    "Edge %s -> %s | maximum capacity = %d | allowed flow = %d ",
+                    u, v, capacity, flow, isResidual());
+        }else{
+            return null;
+        }
+    }
+
 }

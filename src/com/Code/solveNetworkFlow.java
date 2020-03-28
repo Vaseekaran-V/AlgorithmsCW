@@ -8,14 +8,17 @@ public abstract class solveNetworkFlow {
     public static final long CONSTANT_NUM = Long.MAX_VALUE / 2;
 
     //inputs :number of nodes, source and sink
-    public final int nodes, source, sink;
+    public int nodes, source, sink;
 
     protected int visitedToken = 1;
     protected int[] visited;
+    protected int[] level;
+    protected int[] next;
 
     protected boolean solved;
 
     protected long maxFlow;
+    int counter = 0;
 
     protected List<Edge>[] graph;
 
@@ -23,8 +26,10 @@ public abstract class solveNetworkFlow {
         this.nodes = nodes;
         this.source = source;
         this.sink = sink;
-        initializeEmptyFlowGraph();
         visited = new int[nodes];
+        level = new int[nodes];
+        next = new int[nodes];
+        initializeEmptyFlowGraph();
     }
 
     private void initializeEmptyFlowGraph() {
@@ -32,6 +37,7 @@ public abstract class solveNetworkFlow {
         for (int i = 0; i < nodes; i++){
             graph[i] = new ArrayList<>();
         }
+
     }
 
     public void connectEdge(int start, int end, long capacity){
@@ -46,17 +52,23 @@ public abstract class solveNetworkFlow {
         graph[end].add(e2);
     }
 
-    public void deleteEdge(int start, int end, Long capacity){
-        //Edge e = new Edge(start, end, capacity);
+    public void deleteEdge(int start, int end){
+        updateCapacity(start, end, 0);
+
+    }
+
+    public void updateCapacity (int start, int end, long capacity){
         for(int i = 0; i < graph.length; i++){
             for(int j = 0; j < graph[i].size(); j++){
-                if((graph[i].get(j).start == start && graph[i].get(j).end == end && graph[i].get(j).capacity == capacity)){
-                    graph[i].get(j).setCapacity(0);
+                Edge getEdge = graph[i].get(j);
+                if((getEdge.getStart() == start && getEdge.getEnd() == end) || (getEdge.getStart() == end && getEdge.getEnd() == start)){
+                    graph[i].get(j).setCapacity(capacity);
+                    break;
                 }
             }
         }
-        initializeEmptyFlowGraph();
-        visited = new int[nodes];
+
+        //reset();
 
     }
 
@@ -70,11 +82,22 @@ public abstract class solveNetworkFlow {
         return maxFlow;
     }
 
+    public void reset(){
+        maxFlow = 0;
+        visitedToken = 1;
+        visited = new int[nodes];
+        level = new int[nodes];
+        next = new int[nodes];
+        execute();
+    }
+
     public void visit(int i){
+
         visited[i] = visitedToken;
     }
 
     public boolean visited(int i){
+
         return visited[i] == visitedToken;
     }
 
