@@ -2,13 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a55a6640-ca25-4742-aee4-cf54144c971c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Vaseekaran.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Vaseekaran.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/stdlib.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CW Prob.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/large graph.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/medium graph.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/small graph.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Code/Main_FromTextFiles.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/very small graph.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MaxFlow.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MaxFlow.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MaxFlow/com/Code/DinicsAlgorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MaxFlow/com/Code/DinicsAlgorithm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MaxFlow/com/Code/Edge.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MaxFlow/com/Code/Edge.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MaxFlow/com/Code/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MaxFlow/com/Code/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/Code/DinicsAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Code/DinicsAlgorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/Code/Edge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Code/Edge.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/Code/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Code/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/Code/solveNetworkFlow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Code/solveNetworkFlow.java" afterDir="false" />
     </list>
@@ -16,6 +21,20 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -33,13 +52,16 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1ZTmJ6xLUhIyYreJ8QJusjvchh0" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
@@ -48,13 +70,16 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../stdlib.jar!/" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
@@ -62,8 +87,28 @@
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="com.Code" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.Code" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Vaseekaran.AMIRTHAVARMAN\IdeaProjects\MaxFlow" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.Main 2 - Small graph">
+    <configuration name="In" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="In" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main 2 - Small graph" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.Code.Main_FromTextFiles" />
+      <module name="MaxFlow" />
+      <option name="PROGRAM_PARAMETERS" value="small graph.txt" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.Code.Main" />
       <module name="MaxFlow" />
@@ -74,9 +119,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.Code.Main_2" />
+    <configuration name="Main2" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.Code.Main_FromTextFiles" />
       <module name="MaxFlow" />
+      <option name="PROGRAM_PARAMETERS" value="test.txt" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.Code.*" />
@@ -87,10 +133,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main3" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.Code.Main3" />
+      <module name="MaxFlow" />
+      <option name="PROGRAM_PARAMETERS" value="CW Prob.txt" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.Code.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="stdlib.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/../stdlib.jar/" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main 2 - Small graph" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Main2" />
+      <item itemvalue="Application.In" />
+      <item itemvalue="JAR Application.stdlib.jar" />
+      <item itemvalue="Application.Main3" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Main_2" />
+        <item itemvalue="JAR Application.stdlib.jar" />
+        <item itemvalue="Application.In" />
+        <item itemvalue="Application.Main2" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -114,7 +189,9 @@
       <workItem from="1585277378714" duration="6145000" />
       <workItem from="1585333778630" duration="5901000" />
       <workItem from="1585377767481" duration="5601000" />
-      <workItem from="1585404390971" duration="3922000" />
+      <workItem from="1585404390971" duration="8054000" />
+      <workItem from="1585463042697" duration="8016000" />
+      <workItem from="1585477799978" duration="18470000" />
     </task>
     <task id="LOCAL-00001" summary="Modified the code: can specify which nodes are the source and sink, therefore it would be easier for the user">
       <created>1585077647133</created>
@@ -123,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585077647133</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Created the terminal... and added a function to add/delete/edit capacities for the CW specification">
+      <created>1585408403636</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1585408403636</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,58 +224,96 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Modified the code: can specify which nodes are the source and sink, therefore it would be easier for the user" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modified the code: can specify which nodes are the source and sink, therefore it would be easier for the user" />
+    <MESSAGE value="Created the terminal... and added a function to add/delete/edit capacities for the CW specification" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created the terminal... and added a function to add/delete/edit capacities for the CW specification" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="448" y="13" key="#In" timestamp="1585477682058">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="448" y="13" key="#In/0.0.1536.864@0.0.1536.864" timestamp="1585477682058" />
     <state x="261" y="0" width="1014" height="864" key="#Intentions" timestamp="1585384168351">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="261" y="0" width="1014" height="864" key="#Intentions/0.0.1536.864@0.0.1536.864" timestamp="1585384168351" />
+    <state x="448" y="27" key="#Main3" timestamp="1585478394332">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="448" y="27" key="#Main3/0.0.1536.864@0.0.1536.864" timestamp="1585478394332" />
     <state x="261" y="8" key="#Notifications" timestamp="1585244450257">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="261" y="8" key="#Notifications/0.0.1536.864@0.0.1536.864" timestamp="1585244450257" />
+    <state x="261" y="8" key="#Project_Structure" timestamp="1585477757024">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="261" y="8" key="#Project_Structure/0.0.1536.864@0.0.1536.864" timestamp="1585477757024" />
+    <state x="436" y="130" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1585479315568">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="436" y="130" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1536.864@0.0.1536.864" timestamp="1585479315568" />
+    <state x="251" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585478373804">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="251" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1585478373804" />
     <state x="530" y="81" key="#com.intellij.ide.util.MemberChooser" timestamp="1585383444852">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="530" y="81" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1585383444852" />
-    <state x="142" y="0" key="CommitChangelistDialog2" timestamp="1585245386810">
+    <state x="463" y="217" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1585477209731">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="142" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1585245386810" />
-    <state x="499" y="94" key="FileChooserDialogImpl" timestamp="1585339001068">
+    <state x="463" y="217" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.864@0.0.1536.864" timestamp="1585477209731" />
+    <state x="534" y="297" width="467" height="282" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1585478102208">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="499" y="94" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1585339001068" />
-    <state width="1009" height="708" key="GridCell.Tab.0.bottom" timestamp="1585408213489">
+    <state x="534" y="297" width="467" height="282" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.864@0.0.1536.864" timestamp="1585478102208" />
+    <state x="436" y="120" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1585470209290">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1009" height="708" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1585408213489" />
-    <state width="1009" height="708" key="GridCell.Tab.0.center" timestamp="1585408213489">
+    <state x="436" y="120" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1536.864@0.0.1536.864" timestamp="1585470209290" />
+    <state x="452" y="0" key="#stdlib.jar" timestamp="1585479106091">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1009" height="708" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1585408213489" />
-    <state width="1009" height="708" key="GridCell.Tab.0.left" timestamp="1585408213489">
+    <state x="452" y="0" key="#stdlib.jar/0.0.1536.864@0.0.1536.864" timestamp="1585479106091" />
+    <state x="53" y="0" key="CommitChangelistDialog2" timestamp="1585408400205">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1009" height="708" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1585408213489" />
-    <state width="1009" height="708" key="GridCell.Tab.0.right" timestamp="1585408213489">
+    <state x="53" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1585408400205" />
+    <state x="499" y="94" key="FileChooserDialogImpl" timestamp="1585478886454">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1009" height="708" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1585408213489" />
-    <state x="178" y="0" key="SettingsEditor" timestamp="1585377959071">
+    <state x="499" y="94" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1585478886454" />
+    <state width="591" height="708" key="GridCell.Tab.0.bottom" timestamp="1585511660168">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="178" y="0" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1585377959071" />
-    <state x="261" y="100" key="Vcs.Push.Dialog.v2" timestamp="1585077651078">
+    <state width="591" height="708" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1585511660168" />
+    <state width="591" height="708" key="GridCell.Tab.0.center" timestamp="1585511660167">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="261" y="100" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1585077651078" />
-    <state x="401" y="215" key="com.intellij.ide.util.TipDialog" timestamp="1585404661277">
+    <state width="591" height="708" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1585511660167" />
+    <state width="591" height="708" key="GridCell.Tab.0.left" timestamp="1585511660167">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="401" y="215" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1585404661277" />
+    <state width="591" height="708" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1585511660167" />
+    <state width="591" height="708" key="GridCell.Tab.0.right" timestamp="1585511660167">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="591" height="708" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1585511660167" />
+    <state x="82" y="0" key="SettingsEditor" timestamp="1585478980425">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="82" y="0" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1585478980425" />
+    <state x="261" y="100" key="Vcs.Push.Dialog.v2" timestamp="1585408723213">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="261" y="100" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1585408723213" />
+    <state x="401" y="215" key="com.intellij.ide.util.TipDialog" timestamp="1585463301576">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="401" y="215" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1585463301576" />
     <state x="423" y="306" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1585408236515">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

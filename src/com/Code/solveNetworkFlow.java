@@ -12,13 +12,10 @@ public abstract class solveNetworkFlow {
 
     protected int visitedToken = 1;
     protected int[] visited;
-    protected int[] level;
-    protected int[] next;
 
     protected boolean solved;
 
     protected long maxFlow;
-    int counter = 0;
 
     protected List<Edge>[] graph;
 
@@ -27,8 +24,6 @@ public abstract class solveNetworkFlow {
         this.source = source;
         this.sink = sink;
         visited = new int[nodes];
-        level = new int[nodes];
-        next = new int[nodes];
         initializeEmptyFlowGraph();
     }
 
@@ -40,6 +35,7 @@ public abstract class solveNetworkFlow {
 
     }
 
+    //connecting 2 nodes
     public void connectEdge(int start, int end, long capacity){
         if(capacity <= 0){
             throw new IllegalArgumentException("Forward edge capacity <= 0");
@@ -52,11 +48,13 @@ public abstract class solveNetworkFlow {
         graph[end].add(e2);
     }
 
+    //deleting an edge
     public void deleteEdge(int start, int end){
         updateCapacity(start, end, 0);
 
     }
 
+    //updating the capacity on an edge
     public void updateCapacity (int start, int end, long capacity){
         for(int i = 0; i < graph.length; i++){
             for(int j = 0; j < graph[i].size(); j++){
@@ -67,29 +65,20 @@ public abstract class solveNetworkFlow {
                 }
             }
         }
-
-        //reset();
-
     }
 
+    //returning the graph
     public List<Edge>[] getGraph(){
         execute();
         return graph;
     }
 
+    //getting the max flow
     public long getMaxFlow(){
         execute();
         return maxFlow;
     }
 
-    public void reset(){
-        maxFlow = 0;
-        visitedToken = 1;
-        visited = new int[nodes];
-        level = new int[nodes];
-        next = new int[nodes];
-        execute();
-    }
 
     public void visit(int i){
 

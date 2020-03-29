@@ -7,15 +7,15 @@ import java.util.Deque;
 import static java.lang.Math.min;
 
 public class DinicsAlgorithm extends solveNetworkFlow {
-    //private int[] level;
+    private int[] level;
     public DinicsAlgorithm(int nodes, int source, int sink) {
         super(nodes, source, sink);
-        //level = new int[nodes];
+        level = new int[nodes];
     }
 
     @Override
     protected void solve() {
-        //int[] next = new int[nodes];
+        int[] next = new int[nodes];
 
         while(bfs()){
             Arrays.fill(next, 0);
@@ -24,8 +24,6 @@ public class DinicsAlgorithm extends solveNetworkFlow {
                 maxFlow += f;
             }
         }
-
-        //next = new int[nodes];
     }
 
     private boolean bfs(){

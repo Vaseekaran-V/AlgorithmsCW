@@ -3,6 +3,9 @@ package com.Code;
 import java.util.List;
 import java.util.Scanner;
 
+/* This part is for the CW specified question, and also this displays the functionalities such as delete and update edges
+*  This class also has the feature to obtain the input from the user  */
+
 public class Main {
 
     public static void main(String[] args) {
@@ -10,10 +13,15 @@ public class Main {
         main.displayMenu();
     }
 
-    private static Long getWeightFromUser(){
+    //getting the capacity of the edge from the user
+    private static Long getCapacityFromUser(){
         Scanner sc = new Scanner(System.in);
-        Long weight = sc.nextLong();
-        return weight;
+        while (!sc.hasNextLong()) {
+            System.out.println("Incorrect data type... enter the correct data type...");
+            sc.next();
+        }
+        Long capacity = sc.nextLong();
+        return capacity;
     }
 
     public void selectChoice(int choice){
@@ -36,6 +44,11 @@ public class Main {
             }
             displayMenu();
             System.out.println("Enter the choice of selection");
+            while (!sc.hasNextInt()) {
+                System.out.println("Incorrect data type... enter the correct data type...");
+                displayMenu();
+                sc.next();
+            }
             choice = sc.nextInt();
         }
     }
@@ -45,6 +58,10 @@ public class Main {
         System.out.println("Press 1 to solve the CW graph");
         System.out.println("Press 2 to create a new graph and find Maximum Flow");
         System.out.println("Enter your selection : ");
+        while (!sc.hasNextInt()) {
+            System.out.println("Incorrect data type... enter the correct data type...");
+            sc.next();
+        }
         int choice = sc.nextInt();
         selectChoice(choice);
 
@@ -55,12 +72,22 @@ public class Main {
 
         //get the number of nodes
         System.out.println("How many nodes are present in the graph?");
+        while (!sc.hasNextInt()) {
+            System.out.println("Incorrect data type... enter the correct data type...");
+            sc.next();
+        }
         int nodes = sc.nextInt();
         System.out.println("What is the source node (enter the number of the source) : ");
-        //int source = nodes - 2;
+        while (!sc.hasNextInt()) {
+            System.out.println("Incorrect data type... enter the correct data type...");
+            sc.next();
+        }
         int source = sc.nextInt();
         System.out.println("Enter the sink node: ");
-        //int sink = nodes - 1;
+        while (!sc.hasNextInt()) {
+            System.out.println("Incorrect data type... enter the correct data type...");
+            sc.next();
+        }
         int sink = sc.nextInt();
 
         solveNetworkFlow dinicsSolver = new DinicsAlgorithm(nodes, source, sink);
@@ -82,9 +109,14 @@ public class Main {
         String answer = sc.next();
         while(answer.toLowerCase().contains("y")){
             System.out.println("Enter the node where the source node is connected to...");
+            while (!sc.hasNextInt()) {
+                System.out.println("Incorrect data type... enter the correct data type...");
+                sc.next();
+            }
             int end = sc.nextInt();
             System.out.println("What is the weight between the source node and node " + end + " :");
-            Long weight = getWeightFromUser();
+
+            Long weight = getCapacityFromUser();
             dinicsSolver.connectEdge(source, end, weight);
             System.out.println("Is there a connection between the source node and any other nodes");
             System.out.println("Answer \"y\" if yes or \"n\" for no");
@@ -101,9 +133,14 @@ public class Main {
                 String answer_2 = sc.next();
                 while (answer_2.toLowerCase().contains("y")) {
                     System.out.println("Enter the node where the node " + i + " is connected to...");
+                    while (!sc.hasNextInt()) {
+                        System.out.println("Incorrect data type.. enter the correct data type..");
+                        sc.next();
+                    }
                     int end = sc.nextInt();
                     System.out.println("What is the weight between the node " + i + " and node " + end + " :");
-                    Long weight = getWeightFromUser();
+
+                    Long weight = getCapacityFromUser();
                     dinicsSolver.connectEdge(i, end, weight);
                     System.out.println("Is there a connection between the node " + i + " and any other nodes");
                     System.out.println("Answer \"y\" if yes or \"n\" for no");
@@ -119,9 +156,14 @@ public class Main {
         String answer_3 = sc.next();
         while(answer_3.toLowerCase().contains("y")){
             System.out.println("Enter the node which is connected to the sink node...");
+            while (!sc.hasNextInt()) {
+                System.out.println("Incorrect data type.. enter the correct data type...");
+                sc.next();
+            }
             int start = sc.nextInt();
             System.out.println("What is the weight between the sink node and node " + start + " :");
-            Long weight = getWeightFromUser();
+
+            Long weight = getCapacityFromUser();
             dinicsSolver.connectEdge(start, sink, weight);
             System.out.println("Is there a connection between any other nodes and sink node");
             System.out.println("Answer \"y\" if yes or \"n\" for no");
@@ -149,6 +191,8 @@ public class Main {
         dinicsAlgorithm.connectEdge(source, 1, 10);
         dinicsAlgorithm.connectEdge(source, 2, 8);
 
+        //edges between the source and sink (excluding edges connected from source,
+        //and edges connected to sink.
         dinicsAlgorithm.connectEdge(1, 3, 5);
         dinicsAlgorithm.connectEdge(1, 2, 5);
         dinicsAlgorithm.connectEdge(2, 1, 4);
@@ -157,6 +201,7 @@ public class Main {
         dinicsAlgorithm.connectEdge(3, 4, 6);
         dinicsAlgorithm.connectEdge(4, 3, 10);
 
+        //edges connected to the sink
         dinicsAlgorithm.connectEdge(3, sink, 3);
         dinicsAlgorithm.connectEdge(4, sink, 14);
 
@@ -166,6 +211,10 @@ public class Main {
         System.out.println("Press 2 to get Maximum Flow for graph with deleted edges");
         System.out.println("Press 3 to get Maximum Flow for graph with edited capacities");
 
+        while (!sc.hasNextInt()) {
+            System.out.println("Incorrect data type... enter the correct data type...");
+            sc.next();
+        }
         int choice = sc.nextInt();
 
         switch(choice){
