@@ -46,7 +46,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="TryingDeleteFunction" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -278,10 +278,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="452" y="0" key="#stdlib.jar/0.0.1536.864@0.0.1536.864" timestamp="1585479106091" />
-    <state x="53" y="0" key="CommitChangelistDialog2" timestamp="1585408400205">
+    <state x="53" y="0" key="CommitChangelistDialog2" timestamp="1585512315850">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="53" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1585408400205" />
+    <state x="53" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1585512315850" />
     <state x="499" y="94" key="FileChooserDialogImpl" timestamp="1585478886454">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -306,10 +306,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="82" y="0" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1585478980425" />
-    <state x="261" y="100" key="Vcs.Push.Dialog.v2" timestamp="1585408723213">
+    <state x="261" y="100" key="Vcs.Push.Dialog.v2" timestamp="1585512331263">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="261" y="100" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1585408723213" />
+    <state x="261" y="100" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1585512331263" />
     <state x="401" y="215" key="com.intellij.ide.util.TipDialog" timestamp="1585463301576">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
