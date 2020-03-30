@@ -15,7 +15,11 @@ public class DinicsAlgorithm extends solveNetworkFlow {
 
     @Override
     protected void solve() {
+
         int[] next = new int[nodes];
+
+        //initiating the start time of the program
+        double startTime = System.nanoTime();
 
         while(bfs()){
             Arrays.fill(next, 0);
@@ -24,6 +28,10 @@ public class DinicsAlgorithm extends solveNetworkFlow {
                 maxFlow += f;
             }
         }
+
+        double endTime = System.nanoTime();
+        double elapsedTime = (endTime - startTime)/1000;
+        System.out.println("\nTime taken: " + elapsedTime + " micro seconds");
     }
 
     private boolean bfs(){

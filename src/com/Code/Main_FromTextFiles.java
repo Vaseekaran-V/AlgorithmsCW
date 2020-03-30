@@ -31,10 +31,11 @@ public class Main_FromTextFiles {
         * to find the Maximum Flow of Different graphs */
 
         //scanner = new Scanner(new File("CW prob.txt"));
-        //scanner = new Scanner(new File("very small graph.txt"));
-        //scanner = new Scanner(new File("small graph.txt"));
-        //scanner = new Scanner(new File("medium graph.txt"));
-        scanner = new Scanner(new File("large graph.txt"));
+        //scanner = new Scanner(new File("6 nodes_10 edges graph.txt"));
+        //scanner = new Scanner(new File("12 nodes_20 edges graph.txt"));
+        //scanner = new Scanner(new File("24 nodes_40 edges graph.txt"));
+        scanner = new Scanner(new File("48 nodes_80 edges graph.txt"));
+
 
         //adding the integers in text to an array list
         ArrayList<Integer> intFromText = new ArrayList<>();
@@ -86,15 +87,14 @@ public class Main_FromTextFiles {
             dinicsAlgorithm.connectEdge(start, end, capacity);
         }
 
-        //initiating the start time of the program
-        double startTime = System.nanoTime();
-        //displaying the max flow and the connected graph
+        System.out.println("No of nodes: " + numArray[0][0]);
         System.out.println("Source: " + numArray[0][1]);
         System.out.println("Sink: " + numArray[0][2]);
+        System.out.println("No of Edges: " + (numArray.length - 1));
+
+
+        //displaying the max flow and the connected graph
         System.out.println("\nMaximum Flow for the graph = " + dinicsAlgorithm.getMaxFlow());
-        double endTime = System.nanoTime();
-        double elapsedTime = (endTime - startTime)/1000;
-        System.out.println("\nTime taken: " + elapsedTime + " micro seconds");
 
         System.out.println();
         displayGraph(dinicsAlgorithm, source, sink);
