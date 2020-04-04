@@ -9,8 +9,7 @@ public abstract class solveNetworkFlow {
 
     //inputs :number of nodes, source and sink
     public int nodes, source, sink;
-
-    protected int visitedToken = 1;
+    
     protected int[] visited;
 
     protected boolean solved;
@@ -77,21 +76,6 @@ public abstract class solveNetworkFlow {
     public long getMaxFlow(){
         execute();
         return maxFlow;
-    }
-
-
-    public void visit(int i){
-
-        visited[i] = visitedToken;
-    }
-
-    public boolean visited(int i){
-
-        return visited[i] == visitedToken;
-    }
-
-    public void markAllNodesAsUnvisited(){
-        visitedToken++;
     }
 
     private void execute() {

@@ -1,5 +1,6 @@
 package com.Code;
 
+//class for edges in the graph
 public class Edge {
     public int start;
     public int end;
@@ -13,10 +14,6 @@ public class Edge {
         this.capacity = capacity;
     }
 
-    public Edge getResidual() {
-        return residual;
-    }
-
     public void setResidual(Edge residual) {
         this.residual = residual;
     }
@@ -25,32 +22,12 @@ public class Edge {
         return start;
     }
 
-    public void setStart(int start) {
-        this.start = start;
-    }
-
     public int getEnd() {
         return end;
     }
 
-    public void setEnd(int end) {
-        this.end = end;
-    }
-
     public void setCapacity(long capacity) {
         this.capacity = capacity;
-    }
-
-    public long getFlow() {
-        return flow;
-    }
-
-    public void setFlow(long flow) {
-        this.flow = flow;
-    }
-
-    public long getCapacity() {
-        return capacity;
     }
 
     public boolean isResidual(){
