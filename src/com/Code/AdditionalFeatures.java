@@ -254,12 +254,14 @@ public abstract class AdditionalFeatures {
 
     //deleting an edge
     public void CWGraphDeleteEdge(solveNetworkFlow dinicsAlgorithm){
+        System.out.println("Deleting edges: 1 -> 2 and 3 -> 4");
         dinicsAlgorithm.deleteEdge(1, 2);
         dinicsAlgorithm.deleteEdge(3, 4);
     }
 
     //editing the capacity of an edge
     public void CWGraphEditCapacity(solveNetworkFlow dinicsAlgorithm, int source){
+        System.out.println("Updating capacity of edges to 5: source -> 1 and source -> 2");
         dinicsAlgorithm.updateCapacity(source, 1, 5);
         dinicsAlgorithm.updateCapacity(source, 2, 5);
     }
