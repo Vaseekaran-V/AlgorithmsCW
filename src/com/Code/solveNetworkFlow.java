@@ -9,20 +9,19 @@ public abstract class solveNetworkFlow {
 
     //inputs :number of nodes, source and sink
     public int nodes, source, sink;
-    
-    protected int[] visited;
 
+    //to check if the max flow has been found already
     protected boolean solved;
 
     protected long maxFlow;
 
+    //adjacency list that stores the graph
     protected List<Edge>[] graph;
 
     public solveNetworkFlow(int nodes, int source, int sink) {
         this.nodes = nodes;
         this.source = source;
         this.sink = sink;
-        visited = new int[nodes];
         initializeEmptyFlowGraph();
     }
 
@@ -86,7 +85,7 @@ public abstract class solveNetworkFlow {
         solve();
     }
 
-    //method that solves the network flow
+    //abstract method that solves the network flow | implemented in DinicsAlgorithm class
     protected abstract void solve();
 
 }

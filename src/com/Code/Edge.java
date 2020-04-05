@@ -30,19 +30,23 @@ public class Edge {
         this.capacity = capacity;
     }
 
+    //checking if the capacity is positive in the edge
     public boolean isResidual(){
         return capacity == 0;
     }
 
+    //returns the capacity of the edge after flow is calculated
     public long remainingCapacity(){
         return (capacity - flow);
     }
 
+    //updates the flow along the edge
     public void augment(long bottleneck){
         flow = flow + bottleneck;
         residual.flow -= bottleneck;
     }
 
+    //function to output each edge's source, sink, it's maximum capacity and the allowed flow through the edge
     public String toString(int source, int sink) {
         String u = (start == source) ? "source" : ((start == sink) ? "sink" : String.valueOf(start));
         String v = (end == source) ? "source" : ((end == sink) ? "sink" : String.valueOf(end));

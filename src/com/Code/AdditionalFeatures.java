@@ -6,6 +6,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+/*an abstract class that contains all the methods that is going to be executed in order to obtain the maximum flow
+* These methods are implemented by 2 main classes
+*   Main.java - > finds the maximum flow of the CW graph and user input graph
+*   Main_FromTextFiles.java - > finds the maximum flow of graphs specified by text files*/
 public abstract class AdditionalFeatures {
 
     //displaying the menu for selection
@@ -287,17 +291,20 @@ public abstract class AdditionalFeatures {
     // -------------------------------------------------------------------------------------------------------
     /* code executed in Main_FromTextFiles class
     *  this gets the data from the text file included*/
+
+
+
     public void getOutput() throws FileNotFoundException {
 
         Scanner scanner;
         /* You can uncomment the required scanner and comment the not-required one
          * to find the Maximum Flow of Different graphs */
 
-        //scanner = new Scanner(new File("CW prob.txt"));
+        scanner = new Scanner(new File("CW prob.txt"));
         //scanner = new Scanner(new File("6 nodes_10 edges graph.txt"));
         //scanner = new Scanner(new File("12 nodes_20 edges graph.txt"));
         //scanner = new Scanner(new File("24 nodes_40 edges graph.txt"));
-        scanner = new Scanner(new File("48 nodes_80 edges graph.txt"));
+        //scanner = new Scanner(new File("48 nodes_80 edges graph.txt"));
 
 
         //adding the integers in text to an array list
