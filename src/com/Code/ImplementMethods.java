@@ -10,7 +10,7 @@ import java.util.Scanner;
 * These methods are implemented by 2 main classes
 *   Main.java - > finds the maximum flow of the CW graph and user input graph
 *   Main_FromTextFiles.java - > finds the maximum flow of graphs specified by text files*/
-public abstract class AdditionalFeatures {
+public class ImplementMethods {
 
     //displaying the menu for selection
     public void displayMenu(){
@@ -91,7 +91,7 @@ public abstract class AdditionalFeatures {
         }
         int sink = sc.nextInt();
 
-        solveNetworkFlow dinicsSolver = new DinicsAlgorithm(nodes, source, sink);
+        Algorithms dinicsSolver = new DinicsAlgorithm(nodes, source, sink);
 
         //num of nodes between the source and sink
         System.out.println("Nodes between source and sink");
@@ -184,7 +184,7 @@ public abstract class AdditionalFeatures {
         int source = 0;
         int sink = 5;
 
-        solveNetworkFlow dinicsAlgorithm = new DinicsAlgorithm(nodes, source, sink);
+        Algorithms dinicsAlgorithm = new DinicsAlgorithm(nodes, source, sink);
 
         System.out.println();
 
@@ -253,21 +253,21 @@ public abstract class AdditionalFeatures {
     }
 
     //deleting an edge
-    public void CWGraphDeleteEdge(solveNetworkFlow dinicsAlgorithm){
+    public void CWGraphDeleteEdge(Algorithms dinicsAlgorithm){
         System.out.println("Deleting edges: 1 -> 2 and 3 -> 4");
         dinicsAlgorithm.deleteEdge(1, 2);
         dinicsAlgorithm.deleteEdge(3, 4);
     }
 
     //editing the capacity of an edge
-    public void CWGraphEditCapacity(solveNetworkFlow dinicsAlgorithm, int source){
+    public void CWGraphEditCapacity(Algorithms dinicsAlgorithm, int source){
         System.out.println("Updating capacity of edges to 5: source -> 1 and source -> 2");
         dinicsAlgorithm.updateCapacity(source, 1, 5);
         dinicsAlgorithm.updateCapacity(source, 2, 5);
     }
 
     //getting the max flow of the graph
-    public void getMaxFlowGraph(solveNetworkFlow dinicsAlgorithm){
+    public void getMaxFlowGraph(Algorithms dinicsAlgorithm){
         System.out.println("Maximum Flow for the graph: " + dinicsAlgorithm.getMaxFlow());
     }
 
@@ -284,19 +284,18 @@ public abstract class AdditionalFeatures {
     }
 
     //printing the graph (displaying each edge)
-    public void displayGraph(solveNetworkFlow dinicsAlgorithm, int source, int sink){
+    public void displayGraph(Algorithms dinicsAlgorithm, int source, int sink){
         System.out.println("Displaying the graph...\n");
         List<Edge>[] graph = dinicsAlgorithm.getGraph();
         printGraph(graph, source, sink);
     }
 
     // -------------------------------------------------------------------------------------------------------
-    /* code executed in Main_FromTextFiles class
-    *  this gets the data from the text file included*/
+    /*  this gets the data from the text files*/
 
 
 
-    public void getOutput() throws FileNotFoundException {
+    public void getFromTextFiles() throws FileNotFoundException {
 
         Scanner scanner;
         /* You can uncomment the required scanner and comment the not-required one
@@ -351,7 +350,7 @@ public abstract class AdditionalFeatures {
         int sink = numArray[0][2];
 
         //code for creating edges in the graph
-        solveNetworkFlow dinicsAlgorithm = new DinicsAlgorithm(nodes, source, sink);
+        Algorithms dinicsAlgorithm = new DinicsAlgorithm(nodes, source, sink);
         for(int j = 1; j < numArray.length; j++){
             int start = numArray[j][0];
             int end = numArray[j][1];

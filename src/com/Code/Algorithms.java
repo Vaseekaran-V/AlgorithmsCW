@@ -3,7 +3,7 @@ package com.Code;
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class solveNetworkFlow {
+public abstract class Algorithms {
     //to avoid overflow
     public static final long CONSTANT_NUM = Long.MAX_VALUE / 2;
 
@@ -18,7 +18,7 @@ public abstract class solveNetworkFlow {
     //adjacency list that stores the graph
     protected List<Edge>[] graph;
 
-    public solveNetworkFlow(int nodes, int source, int sink) {
+    public Algorithms(int nodes, int source, int sink) {
         this.nodes = nodes;
         this.source = source;
         this.sink = sink;

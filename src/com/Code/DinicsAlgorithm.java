@@ -6,7 +6,7 @@ import java.util.Deque;
 
 import static java.lang.Math.min;
 
-public class DinicsAlgorithm extends solveNetworkFlow {
+public class DinicsAlgorithm extends Algorithms {
     //keeping track of the levels of each nodes during the level graph construction
     private int[] level;
     public DinicsAlgorithm(int nodes, int source, int sink) {

@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a55a6640-ca25-4742-aee4-cf54144c971c" name="Default Changelist" comment="" />
+    <list default="true" id="a55a6640-ca25-4742-aee4-cf54144c971c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MaxFlow/com/Code/DinicsAlgorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MaxFlow/com/Code/DinicsAlgorithm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MaxFlow/com/Code/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MaxFlow/com/Code/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Code/AdditionalFeatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Code/ImplementMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Code/DinicsAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Code/DinicsAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Code/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Code/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Code/Main_FromTextFiles.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Code/solveNetworkFlow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Code/Algorithms.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,7 +64,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Max Flow - CW" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -184,7 +193,8 @@
       <workItem from="1586009877476" duration="1994000" />
       <workItem from="1586030644872" duration="75000" />
       <workItem from="1586066555475" duration="4989000" />
-      <workItem from="1586095888027" duration="5194000" />
+      <workItem from="1586095888027" duration="6094000" />
+      <workItem from="1586145021113" duration="4970000" />
     </task>
     <task id="LOCAL-00001" summary="Modified the code: can specify which nodes are the source and sink, therefore it would be easier for the user">
       <created>1585077647133</created>
@@ -235,7 +245,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586103024047</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Print message when deleting or updating an edge">
+      <created>1586103380914</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1586103380914</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,6 +268,19 @@
       </list>
     </option>
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Modified the code: can specify which nodes are the source and sink, therefore it would be easier for the user" />
@@ -260,7 +290,8 @@
     <MESSAGE value="Added text files with 6, 12, 24, 48 nodes..." />
     <MESSAGE value="Cleaned the code... created an abstract class to clean the main class" />
     <MESSAGE value="Included a text file... made some cleaning" />
-    <option name="LAST_COMMIT_MESSAGE" value="Included a text file... made some cleaning" />
+    <MESSAGE value="Print message when deleting or updating an edge" />
+    <option name="LAST_COMMIT_MESSAGE" value="Print message when deleting or updating an edge" />
   </component>
   <component name="WindowStateProjectService">
     <state x="448" y="13" key="#In" timestamp="1585477682058">
@@ -311,42 +342,42 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="452" y="0" key="#stdlib.jar/0.0.1536.864@0.0.1536.864" timestamp="1585479106091" />
-    <state x="270" y="0" key="CommitChangelistDialog2" timestamp="1586103020653">
+    <state x="270" y="0" key="CommitChangelistDialog2" timestamp="1586103378639">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="270" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1586103020653" />
-    <state x="499" y="94" key="FileChooserDialogImpl" timestamp="1585951042497">
+    <state x="270" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1586103378639" />
+    <state x="499" y="94" key="FileChooserDialogImpl" timestamp="1586157374318">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="499" y="94" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1585951042497" />
-    <state width="37" height="708" key="GridCell.Tab.0.bottom" timestamp="1586103278141">
+    <state x="499" y="94" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1586157374318" />
+    <state width="570" height="708" key="GridCell.Tab.0.bottom" timestamp="1586151694520">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="37" height="708" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1586103278141" />
-    <state width="37" height="708" key="GridCell.Tab.0.center" timestamp="1586103278140">
+    <state width="570" height="708" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1586151694520" />
+    <state width="570" height="708" key="GridCell.Tab.0.center" timestamp="1586151694520">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="37" height="708" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1586103278140" />
-    <state width="37" height="708" key="GridCell.Tab.0.left" timestamp="1586103278140">
+    <state width="570" height="708" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1586151694520" />
+    <state width="570" height="708" key="GridCell.Tab.0.left" timestamp="1586151694520">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="37" height="708" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1586103278140" />
-    <state width="37" height="708" key="GridCell.Tab.0.right" timestamp="1586103278141">
+    <state width="570" height="708" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1586151694520" />
+    <state width="570" height="708" key="GridCell.Tab.0.right" timestamp="1586151694520">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="37" height="708" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1586103278141" />
+    <state width="570" height="708" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1586151694520" />
     <state x="82" y="0" key="SettingsEditor" timestamp="1586101094902">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="82" y="0" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1586101094902" />
-    <state x="261" y="100" key="Vcs.Push.Dialog.v2" timestamp="1586103026839">
+    <state x="261" y="100" key="Vcs.Push.Dialog.v2" timestamp="1586103382955">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="261" y="100" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1586103026839" />
-    <state x="401" y="215" key="com.intellij.ide.util.TipDialog" timestamp="1586096682119">
+    <state x="261" y="100" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1586103382955" />
+    <state x="401" y="215" key="com.intellij.ide.util.TipDialog" timestamp="1586145019496">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="401" y="215" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1586096682119" />
+    <state x="401" y="215" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1586145019496" />
     <state x="423" y="306" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1585408236515">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
